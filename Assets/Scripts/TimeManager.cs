@@ -101,5 +101,10 @@ public class TimeManager : MonoBehaviour
         isNight = (currentHour >= 21 || currentHour < 7);
     }
 
+    public bool IsNight()
+    {
+        return isNight;
+    }
+
 
 }
