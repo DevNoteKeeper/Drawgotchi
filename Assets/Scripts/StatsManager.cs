@@ -4,6 +4,8 @@ public class StatsManager : MonoBehaviour
 {
     [SerializeField]
     private TimeManager timeManager;
+    [SerializeField]
+    private SleepManager sleepManager;
 
     private float hunger = 0f;
     private float happiness = 100f;
@@ -19,14 +21,28 @@ public class StatsManager : MonoBehaviour
     private float energyNightDecayPerSecond = 12f / 60f;
 
 
+    // Getter
+    public float Hunger => hunger;
+    public float Happiness => happiness;
+    public float Energy => energy;
+
+
     // Update is called once per frame
     void Update()
     {
         hunger += hungerDecayPerSecond * Time.deltaTime;
-        happiness -= happinessDecayPerSecond * Time.deltaTime;
+        if (sleepManager.IsSleeping)
+        {
+            happiness -= happinessDecayPerSecond * 0.5f * Time.deltaTime;
+        }
+        else
+        {
+            happiness -= happinessDecayPerSecond * Time.deltaTime;
+        }
+            
         
 
-        if (timeManager.IsNight())
+        if (timeManager.IsNight)
         {
             energy -= energyNightDecayPerSecond * Time.deltaTime;
         }
@@ -37,13 +53,15 @@ public class StatsManager : MonoBehaviour
 
         hunger = Mathf.Clamp(hunger, 0, 100);
         happiness = Mathf.Clamp(happiness, 0, 100);
-        energy = Mathf.Clamp(energy, 0, 100);
+        energy = Mathf.Clamp(energy, -100, 100);
 
         StatsWarning();
         Debug.Log(energy);
+
+        
     }
 
-    void StatsWarning()
+    public void StatsWarning()
     {
         if (hunger >= 70f)
             Debug.LogWarning("Hunger Warning!");
@@ -52,5 +70,12 @@ public class StatsManager : MonoBehaviour
         if (energy <= 30f)
             Debug.LogWarning("Energy Warning!");
     }
+    public void OnWakeUp()
+    {
+        energy = 100f;
+        happiness = Mathf.Clamp(happiness + 30f, 0f, 100f);
+    }
+
+
 
 }
