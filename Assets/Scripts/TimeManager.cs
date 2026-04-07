@@ -7,20 +7,28 @@ public class TimeManager : MonoBehaviour
     private float realMinutesPerDay = 15f;
     private float RealSecondsPerGameMinutes => (realMinutesPerDay * 60f) / 1440f;
 
-    public int currentMonth;
-    public int currentDay;
-    public int currentHour;
-    public int currentMinute;
+    private int currentMonth;
+    private int currentDay;
+    private int currentHour;
+    private int currentMinute;
 
     private float timer;
     private bool isRunning;
 
-    private bool isNight;
+    private bool isNight = false;
 
     private float mealTimer = 0f;
     private bool isMealTime;
     [SerializeField]
     private float mealDurationRealSecond = 60f;
+
+
+    // Getter
+    public int CurrentMonth => currentMonth;
+    public int CurrentDay => currentDay;
+    public int CurrentHour => currentHour;
+    public int CurrentMinute => currentMinute;
+    public bool IsNight => isNight;
 
     private void Start()
     {
@@ -101,10 +109,6 @@ public class TimeManager : MonoBehaviour
         isNight = (currentHour >= 21 || currentHour < 7);
     }
 
-    public bool IsNight()
-    {
-        return isNight;
-    }
 
 
 }

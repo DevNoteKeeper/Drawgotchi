@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dateText.text = $"{timeManager.currentMonth}/{timeManager.currentDay}";
-        timeText.text = $"{timeManager.currentHour:D2} : {timeManager.currentMinute:D2}";
+        dateText.text = $"{timeManager.CurrentMonth}/{timeManager.CurrentDay}";
+        timeText.text = $"{timeManager.CurrentHour:D2} : {timeManager.CurrentMinute:D2}";
     }
 }
