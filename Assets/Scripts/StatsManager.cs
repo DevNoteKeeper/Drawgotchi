@@ -31,6 +31,7 @@ public class StatsManager : MonoBehaviour
     void Update()
     {
         hunger += hungerDecayPerSecond * Time.deltaTime;
+
         if (sleepManager.IsSleeping)
         {
             happiness -= happinessDecayPerSecond * 0.5f * Time.deltaTime;
@@ -57,6 +58,13 @@ public class StatsManager : MonoBehaviour
 
         StatsWarning();
         
+    }
+
+    public void ResetStats()
+    {
+        hunger = 0f;
+        happiness = 100f;
+        energy = 100f;
     }
 
     public void StatsWarning()

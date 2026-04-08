@@ -72,4 +72,14 @@ public class DrawingManager : MonoBehaviour
             }
         texture.Apply();
     }
+
+    public void SendDrawing()
+    {
+        byte[] imageData = texture.EncodeToPNG();
+
+        ClearCanvas();
+
+        Debug.Log($"Image size: {imageData.Length} bytes");
+        Debug.Log("Send");
+    }
 }
