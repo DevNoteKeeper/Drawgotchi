@@ -56,8 +56,6 @@ public class StatsManager : MonoBehaviour
         energy = Mathf.Clamp(energy, -100, 100);
 
         StatsWarning();
-        Debug.Log(energy);
-
         
     }
 
@@ -76,6 +74,11 @@ public class StatsManager : MonoBehaviour
         happiness = Mathf.Clamp(happiness + 30f, 0f, 100f);
     }
 
-
+    public void Feed()
+    {
+        hunger = Mathf.Clamp(hunger - 20f, 0f, 100f);
+        happiness = Mathf.Clamp(happiness + 10f, 0f, 100f);
+        Debug.Log("Fed");
+    }
 
 }

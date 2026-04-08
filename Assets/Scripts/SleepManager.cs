@@ -42,4 +42,10 @@ public class SleepManager : MonoBehaviour
         isSleeping = false;
         Debug.Log("Wake up");
     }
+
+    public void TriggerSleep()
+    {
+        StartSleep();
+        Debug.Log("Sleep trigger");
+    }
 }
