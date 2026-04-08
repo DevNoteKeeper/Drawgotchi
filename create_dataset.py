@@ -4,7 +4,7 @@ import cv2
 
 DATASET_DIR = Path("dataset")
 WIN         = "canvas"
-label       = "default"
+label       = "bed"
 canvas      = None
 drawing     = False
 prev_pos    = None
@@ -71,8 +71,8 @@ while True:
         elif 32 <= key < 127:    # Printable ASCII
             label_input += chr(key).lower()
     else:
-        cv2.putText(display, f"Label: {label} | (S)ave (C)lear (L)abel (Q)uit",
-                    (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (200, 50, 50), 2)
+        cv2.putText(display, f"Label: {label} | (S)ave (C)lear (1-6)Label (Q)uit",
+                    (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 50, 50), 2)
         cv2.imshow(WIN, display)
 
         key = cv2.waitKey(16) & 0xFF
@@ -84,8 +84,18 @@ while True:
             canvas[:] = 255
         elif key == ord('c'):
             canvas[:] = 255
-        elif key == ord('l'):
-            entering_label = True
+        elif key == ord('1'):
+            label = "bed"
+        elif key == ord('2'):
+            label = "bread"
+        elif key == ord('3'):
+            label = "chicken"
+        elif key == ord('4'):
+            label = "drink"
+        elif key == ord('5'):
+            label = "noodle"
+        elif key == ord('6'):
+            label = "vegetable"
 
 
 cv2.destroyAllWindows()
