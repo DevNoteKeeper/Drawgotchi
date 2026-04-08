@@ -13,10 +13,6 @@ augment_layer = tf.keras.Sequential([
         tf.keras.layers.RandomRotation(0.15),
         # +-20% zoom in/out
         tf.keras.layers.RandomZoom(0.2),
-        # +-20% contrast
-        tf.keras.layers.RandomContrast(0.2),
-        # +-20% sharpness
-        tf.keras.layers.RandomSharpness(0.2),
     ])
 
 
@@ -33,9 +29,9 @@ def data_augmentation(img, label):
 
 def load_data():
     train_ds = tf.keras.utils.image_dataset_from_directory(
-        'data',
+        'dataset',
         label_mode='categorical',
-        image_size=(480, 310),
+        image_size=(240, 155),
         validation_split=0.3,
         batch_size=16,
         subset='training',
@@ -45,9 +41,9 @@ def load_data():
     )
 
     remain_ds = tf.keras.utils.image_dataset_from_directory(
-        'data',
+        'dataset',
         label_mode='categorical',
-        image_size=(480, 310),
+        image_size=(240, 155),
         validation_split=0.3,
         batch_size=16,
         subset='validation',
@@ -99,7 +95,7 @@ def build_model(hp):
         model.add(tf.keras.layers.Dense(second_layer, activation='relu')),
 
     # final classification
-    model.add(tf.keras.layers.Dense(2, activation="softmax"))
+    model.add(tf.keras.layers.Dense(6, activation="softmax"))
     # learning_rate, [0.01, 0.001, 0.0001]: to process aggressive to fine-tuned training
     model.compile(
         optimizer=tf.keras.optimizers.Adam(hp.Choice('learning_rate', [0.01, 0.001, 0.0001])),
@@ -114,7 +110,7 @@ def optimize_parameter(train_ds, val_ds):
         hypermodel = build_model,
         objective='val_accuracy',
         max_trials=10,
-        project_name="muffin_chihuahua_tuning"
+        project_name="doodle_detection"
     )
     tuner.search(
         train_ds,
@@ -148,7 +144,7 @@ def train_model(train_ds, val_ds, best_hp):
         tf.keras.layers.Dense(second_layer, activation='relu'),
 
 
-    model.add(tf.keras.layers.Dense(2, activation="softmax"))
+    model.add(tf.keras.layers.Dense(6, activation="softmax"))
 
     model.compile(
         optimizer=tf.keras.optimizers.Adam(best_hp.get('learning_rate')),
