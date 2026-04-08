@@ -1,76 +1,91 @@
-# Thanks random guy on linkedin: https://www.linkedin.com/pulse/visualizing-wacom-stylus-data-real-time-python-nikos-mouzakitis-outsf/
-import asyncio
-import sys
-import threading
-from evdev import InputDevice, list_devices, ecodes
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
+from pathlib import Path
+import numpy as np
+import cv2
 
-max_points = 200
-data = {"ABS_X": [], "ABS_Y": [], "ABS_PRESSURE": [], "ABS_DISTANCE": []}
+DATASET_DIR = Path("dataset")
+WIN         = "canvas"
+label       = "default"
+canvas      = None
+drawing     = False
+prev_pos    = None
+entering_label = False
+label_input = ""
 
-def find_wacom_device_name():
-    for path in list_devices():
-        dev = InputDevice(path)
-        print(dev.path, dev.name)
-        if 'Wacom' in dev.name or 'CTL-672' in dev.name or 'One by Wacom' in dev.name:
-            return dev.path, dev.name
-    return None, None
 
-async def read_events(path):
-    dev = InputDevice(path)
-    print(f"Listening on {dev.path} ({dev.name}) - ctrl-c to stop it")
-    async for ev in dev.async_read_loop():
-        if ev.type == ecodes.EV_ABS:
-            absname = ecodes.ABS.get(ev.code, str(ev.code))
-            ## debug to find the ylims
-            #print(f"[{ev.timestamp()}] ABS {absname} value={ev.value}")
-            if absname in data:
-                data[absname].append(ev.value)
-                if len(data[absname]) > max_points:
-                    data[absname].pop(0)
+def make_canvas():
+    h = cv2.getWindowImageRect(WIN)[3] or 1080
+    w = cv2.getWindowImageRect(WIN)[2] or 1920
+    return np.full((h, w, 3), 255, dtype=np.uint8)
 
-# ----- Matplotlib plotting -----
-fig, axs = plt.subplots(4, 1, figsize=(8, 8))
-lines = {}
-keys = ["ABS_X", "ABS_Y", "ABS_PRESSURE", "ABS_DISTANCE"]
-y_limits = {
-    "ABS_X": (0, 22000),
-    "ABS_Y": (0, 13000),
-    "ABS_PRESSURE": (0, 2000),
-    "ABS_DISTANCE": (0, 64)
-}
 
-##set our custom y lims accordin to the values got from the device
-for ax, key in zip(axs, keys):
-    ax.set_title(key)
-    ax.set_xlim(0, max_points)       # horizontal axis: last N points
-    ax.set_ylim(*y_limits[key])      # custom Y-axis limits
-    line, = ax.plot([], [], lw=2)
-    lines[key] = line
+def save():
+    out = DATASET_DIR / label
+    out.mkdir(parents=True, exist_ok=True)
+    count = len(list(out.glob("*.png")))
+    path  = out / f"{count+1:06d}.png"
+    cv2.imwrite(str(path), canvas)
+    print(f"[Saved] {path}")
 
-def update(frame):
-    for key in keys:
-        y = data[key]
-        x = list(range(len(y)))
-        lines[key].set_data(x, y)
-    return lines.values()
 
-ani = animation.FuncAnimation(fig, update, interval=50, blit=True)
+def mouse_cb(event, x, y, flags, param):
+    global drawing, prev_pos
+    if event == cv2.EVENT_LBUTTONDOWN:
+        drawing  = True
+        prev_pos = (x, y)
+    elif event == cv2.EVENT_LBUTTONUP:
+        drawing  = False
+        prev_pos = None
+    elif event == cv2.EVENT_MOUSEMOVE and drawing:
+        if prev_pos:
+            cv2.line(canvas, prev_pos, (x, y), (0, 0, 0),
+                     thickness=6, lineType=cv2.LINE_AA)
+        prev_pos = (x, y)
 
-# ----- Main -----
-path, name = find_wacom_device_name()
-if not path:
-    print("Wacom dev not found")
-    sys.exit()
 
-# Create a background thread to run the asyncio loop
-loop = asyncio.new_event_loop()
-def start_loop():
-    asyncio.set_event_loop(loop)
-    loop.run_until_complete(read_events(path))
+# ── Setup ─────────────────────────────────────────────────────────────────────
+cv2.namedWindow(WIN, cv2.WINDOW_NORMAL)
+cv2.setWindowProperty(WIN, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+cv2.setMouseCallback(WIN, mouse_cb)
 
-threading.Thread(target=start_loop, daemon=True).start()
+# Get actual fullscreen size after a first render
+cv2.imshow(WIN, np.zeros((310, 480, 3), dtype=np.uint8))
+cv2.waitKey(1)
+rect   = cv2.getWindowImageRect(WIN)
+H, W   = rect[3], rect[2]
+canvas = np.full((H, W, 3), 255, dtype=np.uint8)
 
-plt.tight_layout()
-plt.show() 
+# ── Main loop ──────────────────────────────────────────────────────────────────
+while True:
+    display = canvas.copy()
+    if entering_label:
+        cv2.putText(display, f"label: {label_input} ", (10, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (200, 50, 50), 2)
+        cv2.imshow(WIN, display)
+
+        key = cv2.waitKey(16) & 0xFF
+        if key == 13:    # Enter — confirm
+            label = label_input or label
+            entering_label = False
+        elif key == 8 and label_input or key == 127:    # Backspace or Delete
+            label_input = label_input[:-1]
+        elif 32 <= key < 127:    # Printable ASCII
+            label_input += chr(key).lower()
+    else:
+        cv2.putText(display, f"Label: {label} | (S)ave (C)lear (L)abel (Q)uit",
+                    (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (200, 50, 50), 2)
+        cv2.imshow(WIN, display)
+
+        key = cv2.waitKey(16) & 0xFF
+
+        if key in (ord('q'), 27):
+            break
+        elif key in (ord('s'), 13):
+            save()
+            canvas[:] = 255
+        elif key == ord('c'):
+            canvas[:] = 255
+        elif key == ord('l'):
+            entering_label = True
+
+
+cv2.destroyAllWindows()
