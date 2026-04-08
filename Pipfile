@@ -8,6 +8,7 @@ numpy = "*"
 opencv-python = "*"
 tensorflow = "*"
 keras-tuner = "*"
+tensorboard = "*"
 
 [dev-packages]
 
