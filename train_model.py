@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 
 image_size = (96, 96)
+batch_size = 32
 
 def load_data():
     train_ds = tf.keras.utils.image_dataset_from_directory(
@@ -10,7 +11,7 @@ def load_data():
         subset="training",
         seed=123,
         image_size=image_size,
-        batch_size=8,
+        batch_size=batch_size,
         color_mode="grayscale",
     )
 
@@ -20,7 +21,7 @@ def load_data():
         subset="validation",
         seed=123,
         image_size=image_size,
-        batch_size=8,
+        batch_size=batch_size,
         color_mode="grayscale",
     )
 

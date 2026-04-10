@@ -53,7 +53,7 @@ Vegetable, Chicken, Noodle, Bread, Drink, Bed
 | Class | Min| Max|
 | -------- | ---| ---|
 | Vegetable| 5 | 25 |
-| Chicken | 20 | 50 |
+| Meat | 20 | 50 |
 | Noodle | 15 | 40 |
 | Bread | 10 | 35 |
 | Drink | 5 | 20 |
