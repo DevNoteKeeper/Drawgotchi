@@ -24,7 +24,7 @@ CLASS_NAMES = sorted(
 )
 
 CONFIDENCE_THRESHOLD = 0.55
-BRUSH_THICKNESS = 12
+BRUSH_THICKNESS = 6
 
 canvas = None
 drawing = False
