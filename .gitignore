@@ -77,3 +77,4 @@ model.keras
 /doodle_detection
 .idea
 augmented_data
+Pipfile.lock
