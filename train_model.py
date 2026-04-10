@@ -1,26 +1,26 @@
 import tensorflow as tf
 from tensorflow import keras
 
-image_size = (480,310)
+image_size = (96, 96)
 
 def load_data():
     train_ds = tf.keras.utils.image_dataset_from_directory(
-        "dataset",
+        "augmented_data",
         validation_split=0.2,
         subset="training",
         seed=123,
         image_size=image_size,
-        batch_size=32,
+        batch_size=8,
         color_mode="grayscale",
     )
 
     val_ds = tf.keras.utils.image_dataset_from_directory(
-        "dataset",
+        "augmented_data",
         validation_split=0.2,
         subset="validation",
         seed=123,
         image_size=image_size,
-        batch_size=32,
+        batch_size=8,
         color_mode="grayscale",
     )
 
@@ -31,39 +31,73 @@ def load_data():
 
     return train_ds, val_ds
 
+
 def build_model(num_classes):
     model = keras.Sequential([
         keras.layers.Input(shape=(image_size[0], image_size[1], 1)),
-        keras.layers.Rescaling(1./255),
+        keras.layers.Rescaling(1. / 255),
 
-        # keras.layers.RandomFlip("horizontal"),
-        # keras.layers.RandomRotation(0.2),  # ±20% rotation
-        # keras.layers.RandomZoom(0.2),      # ±20% zoom
-        keras.layers.RandomTranslation(0.2, 0.2),  # Shifts (random movement)
+        # More aggressive augmentation for tiny datasets
+        keras.layers.RandomFlip("horizontal"),
+        keras.layers.RandomRotation(0.15),
+        keras.layers.RandomZoom(0.15),
+        keras.layers.RandomTranslation(0.15, 0.15),
 
-
-        keras.layers.Conv2D(16, 3, padding='same', activation='relu'),
-        keras.layers.MaxPooling2D(),
         keras.layers.Conv2D(32, 3, padding='same', activation='relu'),
-        keras.layers.MaxPooling2D(),
+        keras.layers.BatchNormalization(),
+        keras.layers.Dropout(0.25),
+
         keras.layers.Conv2D(64, 3, padding='same', activation='relu'),
         keras.layers.MaxPooling2D(),
+        keras.layers.Dropout(0.25),
+
+        keras.layers.Conv2D(128, 3, padding='same', activation='relu'),
+        keras.layers.MaxPooling2D(),
+        keras.layers.Dropout(0.3),
+
         keras.layers.Flatten(),
         keras.layers.Dense(256, activation='relu'),
+        keras.layers.BatchNormalization(),
+        keras.layers.Dropout(0.5),
         keras.layers.Dense(num_classes)
     ])
 
-    model.compile(optimizer=keras.optimizers.Adam(learning_rate=0.001),
-              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-              metrics=['accuracy'])
+    model.compile(optimizer=keras.optimizers.Adam(learning_rate=1e-3),
+                  loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+                  metrics=['accuracy'])
     return model
+
 
 def train_model(model, train_ds, val_ds):
     model.fit(
         train_ds,
         validation_data=val_ds,
-        epochs=30
+        epochs=300,
+        callbacks=[
+            keras.callbacks.EarlyStopping(
+                monitor="val_accuracy",
+                mode="max",
+                patience=100,
+                restore_best_weights=True,
+                min_delta=0.001,
+                verbose=1,
+            ),
+            keras.callbacks.ReduceLROnPlateau(
+                monitor="val_loss",
+                factor=0.5,
+                patience=25,
+                min_lr=1e-6,
+                verbose=1,
+            ),
+            keras.callbacks.ModelCheckpoint(
+                "best_model.keras",
+                monitor="val_accuracy",
+                mode="max",
+                save_best_only=True,
+            ),
+        ]
     )
+
 
 def confusion_matrix(model, val_ds):
     y_true = []
@@ -86,7 +120,8 @@ def main():
     train_model(model, train_ds, val_ds)
     confusion_matrix(model, val_ds)
 
-    model.save("model.keras")
+    # model.save("model.keras")
+
 
 if __name__ == "__main__":
     main()
