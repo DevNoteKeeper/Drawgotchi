@@ -89,7 +89,7 @@ while True:
         elif key == ord('2'):
             label = "bread"
         elif key == ord('3'):
-            label = "chicken"
+            label = "meat"
         elif key == ord('4'):
             label = "drink"
         elif key == ord('5'):

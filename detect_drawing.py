@@ -74,33 +74,10 @@ def has_ink(img):
     return np.count_nonzero(gray < 245) > 200
 
 
-def center_to_square(gray, threshold=245, pad=12):
-    mask = gray < threshold
-    if not np.any(mask):
-        return gray
-
-    ys, xs = np.where(mask)
-    y0 = max(0, int(ys.min()) - pad)
-    y1 = min(gray.shape[0] - 1, int(ys.max()) + pad)
-    x0 = max(0, int(xs.min()) - pad)
-    x1 = min(gray.shape[1] - 1, int(xs.max()) + pad)
-
-    crop = gray[y0 : y1 + 1, x0 : x1 + 1]
-    ch, cw = crop.shape
-    side = max(ch, cw)
-
-    out = np.full((side, side), 255, dtype=np.uint8)
-    top = (side - ch) // 2
-    left = (side - cw) // 2
-    out[top : top + ch, left : left + cw] = crop
-    return out
-
-
 def preprocess_for_model(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    centered = center_to_square(gray)
     resized = cv2.resize(
-        centered,
+        gray,
         (IMAGE_SIZE[1], IMAGE_SIZE[0]),  # cv2 uses (width, height)
         interpolation=cv2.INTER_AREA,
     )

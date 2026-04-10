@@ -68,7 +68,7 @@ def elastic_transform(gray_img):
     )
 
 
-def augment_and_save(input_dir, output_dir, multiplier=10):
+def augment_and_save(input_dir, output_dir, multiplier=5):
     for class_dir in pathlib.Path(input_dir).iterdir():
         if not class_dir.is_dir():
             continue
