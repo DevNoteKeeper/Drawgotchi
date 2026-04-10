@@ -44,8 +44,12 @@ def build_model(num_classes):
         keras.layers.RandomZoom(0.15),
         keras.layers.RandomTranslation(0.15, 0.15),
 
+        keras.layers.Conv2D(16, 3, padding='same', activation='relu'),
+        keras.layers.MaxPooling2D(),
+        keras.layers.Dropout(0.25),
+
         keras.layers.Conv2D(32, 3, padding='same', activation='relu'),
-        keras.layers.BatchNormalization(),
+        keras.layers.MaxPooling2D(),
         keras.layers.Dropout(0.25),
 
         keras.layers.Conv2D(64, 3, padding='same', activation='relu'),
@@ -63,7 +67,7 @@ def build_model(num_classes):
         keras.layers.Dense(num_classes)
     ])
 
-    model.compile(optimizer=keras.optimizers.Adam(learning_rate=1e-3),
+    model.compile(optimizer=keras.optimizers.Adam(),
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['accuracy'])
     return model
@@ -78,16 +82,9 @@ def train_model(model, train_ds, val_ds):
             keras.callbacks.EarlyStopping(
                 monitor="val_accuracy",
                 mode="max",
-                patience=100,
+                patience=50,
                 restore_best_weights=True,
                 min_delta=0.001,
-                verbose=1,
-            ),
-            keras.callbacks.ReduceLROnPlateau(
-                monitor="val_loss",
-                factor=0.5,
-                patience=25,
-                min_lr=1e-6,
                 verbose=1,
             ),
             keras.callbacks.ModelCheckpoint(
