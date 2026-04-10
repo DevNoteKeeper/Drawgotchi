@@ -121,4 +121,4 @@ def augment_and_save(input_dir, output_dir, multiplier=5):
 
                 Image.fromarray(aug).save(out_class / f"{img_path.stem}_aug{i}.png")
 
-augment_and_save("dataset", "augmented_data")
+augment_and_save("dataset", "augmented_data", multiplier=3)
