@@ -38,7 +38,7 @@ def mouse_cb(event, x, y, flags, param):
     elif event == cv2.EVENT_MOUSEMOVE and drawing:
         if prev_pos:
             cv2.line(canvas, prev_pos, (x, y), (0, 0, 0),
-                     thickness=6, lineType=cv2.LINE_AA)
+                     thickness=12, lineType=cv2.LINE_AA)
         prev_pos = (x, y)
 
 
