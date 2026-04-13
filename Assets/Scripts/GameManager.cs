@@ -25,15 +25,24 @@ public class GameManager : MonoBehaviour
 
     public void StartGame(int month, int day)
     {
-        currentState = GameState.Playing;
+        currentState = GameState.Egg;
         timeManager.StartTime(month, day);
         Debug.Log($"Game Start {month}/{day}");
+        Invoke("OhHatched", 3f);
     }
     public void OhHatched()
+    {
+        currentState = GameState.Hatching;
+        Invoke("ToBaby", 3f);
+        Debug.Log("Hatching stage");
+    }
+
+    public void ToBaby()
     {
         currentState = GameState.Baby;
         Debug.Log("Baby stage");
     }
+
     public void OnGrowToAdult()
     {
         currentState=GameState.Adult;
