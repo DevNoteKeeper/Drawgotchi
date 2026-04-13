@@ -21,6 +21,10 @@ public class FeedManager : MonoBehaviour
 {
     [SerializeField] private StatsManager statsManager;
     private Dictionary<FoodType, FoodPreference> preferences = new();
+    List<FoodType> foods = new List<FoodType>();
+
+    //Getter
+    public List<FoodType> Foods => foods;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +32,7 @@ public class FeedManager : MonoBehaviour
     }
     private void AssignPreference()
     {
-        List<FoodType> foods = new List<FoodType>((FoodType[])Enum.GetValues(typeof(FoodType)));
+        foods = new List<FoodType>((FoodType[])Enum.GetValues(typeof(FoodType)));
         for(int i = foods.Count-1; i > 0; i--)
         {
             int j = UnityEngine.Random.Range(0, i + 1); ;
