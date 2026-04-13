@@ -97,6 +97,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void OnDeath()
+    {
+        currentState = GameState.Dead;
+        SceneManager.LoadScene("Death");
+        Debug.Log("GameOver");
+    }
+
     //Test
     [ContextMenu("Test Feed Vegetable")] void TestVegetable() => Feed("Vegetable");
     [ContextMenu("Test Feed Meat")] void TestMeat() => Feed("Meat");
