@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.Egg;
         timeManager.StartTime(month, day);
+        timeManager.SetPaused(true);
         Debug.Log($"Game Start {month}/{day}");
         Invoke("OhHatched", 3f);
     }
@@ -40,6 +42,8 @@ public class GameManager : MonoBehaviour
     public void ToBaby()
     {
         currentState = GameState.Baby;
+        timeManager.SetPaused(false);
+        timeManager.ResetGameDay();
         Debug.Log("Baby stage");
     }
 
@@ -51,8 +55,10 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        currentState = GameState.Egg;
         statsManager.ResetStats();
+        timeManager.ResetGameDay();
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("Start");
         Debug.Log("Game Reset");
     }
 
