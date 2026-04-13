@@ -2,8 +2,570 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc315760-63f9-4b80-94d9-b67507590f57" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Images/egg/egg.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/egg/egg.aseprite.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/egg/egg_crack.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/egg/egg_crack.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Font.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Font/Minecraft SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Font/Minecraft SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Font/Minecraft.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Font/Minecraft.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/1x/Asset 5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/InteriorTilesLITE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/InteriorTilesLITE.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_basic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_basic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_dislike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_dislike.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_happy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_happy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_hungry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_hungry.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_sleep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_sleep.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_sleepy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/adult/adult_sleepy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_basic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_basic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_dislike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_dislike.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_happy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_happy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_hungry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_hungry.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_sleep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_sleep.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_sleepy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/baby/children_sleepy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/drawgotchi_nintendo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/drawgotchi_nintendo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/egg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/egg.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/egg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/egg/egg.aseprite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/egg/egg.aseprite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/egg/egg_crack.aseprite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/egg/egg_crack.aseprite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/hatching.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/hatching.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/logo egg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Images/logo egg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/InputSystem_Actions.inputactions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scenes/Death.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scenes/Death.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scenes/Main.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scenes/Main.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scenes/Start.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scenes/Start.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/CreatureManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/CreatureManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/DeathManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/DeathManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/DeathSceneManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/DeathSceneManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/DrawingManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/DrawingManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/FeedManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/FeedManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/SleepManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/SleepManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/StartScene.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/StartScene.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/StatsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/StatsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/TimeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/TimeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/UIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/Scripts/UIManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Style Sheets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/InteriorTilesLITE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/InteriorTilesLITE.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/README.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/HouseInteriorLITEDEMO.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/HouseInteriorLITEDEMO.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub1_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub1_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub1_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub1_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub2_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub2_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub2_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bathtub2_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_MidLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_MidLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_MidRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_MidRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDoubleAlt_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedDouble_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingleAlt_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingleAlt_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingleAlt_Mid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingleAlt_Mid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingleAlt_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingleAlt_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingle_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingle_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingle_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BedSingle_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BookOpen.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BookOpen.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase1_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase1_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase1_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase1_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase2_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase2_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase2_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Bookcase2_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BulletinBoard.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/BulletinBoard.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Cabinet1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Cabinet1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Cabinet2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Cabinet2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_DownMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_DownMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_DownRigh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_DownRigh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_Mid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_Mid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_MidLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_MidLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_MidRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_MidRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CarpetRed_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_BackDown.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_BackDown.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_BackUp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_BackUp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_FrontDown.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_FrontDown.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_FrontUp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairOffice_FrontUp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairSeat_Front.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairSeat_Front.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairSeat_Left.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairSeat_Left.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairSeat_Right.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ChairSeat_Right.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Back.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Back.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Front.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Front.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Left.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Left.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Right.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Chair_Right.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Clock.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Clock.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_DownMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_DownMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_UpMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_UpMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchBack_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_DownMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_DownMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_UpMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_UpMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchFront_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchLeft_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchLeft_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchLeft_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchLeft_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchRight_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchRight_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchRight_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchRight_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallBack_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CouchSmallFront_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterLeft_Corner.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterLeft_Corner.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterLeft_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterLeft_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterLeft_Mid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterLeft_Mid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterRight_Corner.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterRight_Corner.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterRight_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterRight_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterRight_Mid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CounterRight_Mid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Counter_Down1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Counter_Down1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Counter_Down2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Counter_Down2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Counter_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Counter_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CurtainRed_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CurtainRed_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CurtainRed_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CurtainRed_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CuttingBoard.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/CuttingBoard.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTableSmall_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTableSmall_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTableSmall_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTableSmall_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTable_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTable_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTable_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/EndTable_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FloorKitchen.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FloorKitchen.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FloorStone.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FloorStone.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FloorWood.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FloorWood.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FlowerVase.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/FlowerVase.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Fridge_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Fridge_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Fridge_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Fridge_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/HouseInteriorLITE.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/HouseInteriorLITE.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/LampDesk.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/LampDesk.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/LampStand_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/LampStand_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/LampStand_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/LampStand_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Laptop.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Laptop.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Mirror.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Mirror.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_Desk.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_Desk.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_HouseLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_HouseLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_HouseRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_HouseRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_Tree.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Painting_Tree.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Phone_Desk1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Phone_Desk1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Phone_Desk2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Phone_Desk2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Phone_Wall.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Phone_Wall.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/PlantTall_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/PlantTall_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/PlantTall_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/PlantTall_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/RedCarpet_UpMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/RedCarpet_UpMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Shelf.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Shelf.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/SinkKitchen.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/SinkKitchen.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Sink_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Sink_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Sink_Up1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Sink_Up1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Sink_Up2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Sink_Up2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Soap.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Soap.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Stove_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Stove_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Stove_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Stove_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVModern_Left.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVModern_Left.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVModern_Right.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVModern_Right.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOldAlt_Left.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOldAlt_Left.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOldAlt_Mid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOldAlt_Mid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOldAlt_Right.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOldAlt_Right.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOld_Left.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOld_Left.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOld_Right.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/TVOld_Right.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_DownMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_DownMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_Mid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_Mid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_MidLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_MidLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_MidRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_MidRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_UpMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_UpMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Table_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1Alt_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1Alt_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1Alt_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1Alt_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1_Front.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1_Front.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1_Left.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1_Left.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1_Right.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet1_Right.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2Alt_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2Alt_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Dow.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Dow.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Left.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Left.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Right.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Toilet2_Right.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ToothbrushCup.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/ToothbrushCup.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WIndow2_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WIndow2_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownSingle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_DownSingle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpSingle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBasic_UpSingle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownSingle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_DownSingle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpSingle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBlueStripe_UpSingle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_2Hori.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_2Hori.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_2Vert.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_2Vert.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BLCorner.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BLCorner.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BLTurn.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BLTurn.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BRCorner.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BRCorner.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BRTurn.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_BRTurn.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_DownLoop.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_DownLoop.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_LeftCorners.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_LeftCorners.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_LeftLoop.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_LeftLoop.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_LowCorners.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_LowCorners.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_RightCorners.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_RightCorners.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_RightLoop.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_RightLoop.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TLCorner.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TLCorner.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TLTurn.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TLTurn.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TRCorner.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TRCorner.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TRTurn.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TRTurn.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TopCorners.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_TopCorners.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_UpLoop.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_UpLoop.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallBottom.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallBottom.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallTop.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallBorder_WallTop.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownSingle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_DownSingle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpLeft.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpLeft.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpMid.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpMid.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpRight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpRight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpSingle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/WallRed_UpSingle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window1_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window1_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window1_Up.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window1_Up.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window2_Down.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window2_Down.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/Assets/waiting/Graduation Cat/HouseInteriorLITE/demo/tilepalette/Window3.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +596,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.create_dataset.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;unity&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.create_dataset.executor": "Run",
+    "Python.drawing_server.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "combine-python-and-unity",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="drawing_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Drawgotchi" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/drawing_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.drawing_server" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
