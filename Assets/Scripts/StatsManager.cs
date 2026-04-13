@@ -82,11 +82,23 @@ public class StatsManager : MonoBehaviour
         happiness = Mathf.Clamp(happiness + 30f, 0f, 100f);
     }
 
-    public void Feed()
+    public void ApplyFeed(float hungerAmount, float happinessAmount)
     {
-        hunger = Mathf.Clamp(hunger - 20f, 0f, 100f);
-        happiness = Mathf.Clamp(happiness + 10f, 0f, 100f);
-        Debug.Log("Fed");
+        hunger = Mathf.Clamp(hunger - hungerAmount, 0f, 100f);
+        happiness = Mathf.Clamp(happiness - happinessAmount, 0f, 100f);
     }
+
+    public void ApplyOverFeed()
+    {
+        energy = Mathf.Clamp(energy - 10f, -100f, 100f);
+        happiness = Mathf.Clamp(happiness - 10f, 0f, 100f);
+    }
+
+    //public void Feed()
+    //{
+    //    hunger = Mathf.Clamp(hunger - 20f, 0f, 100f);
+    //    happiness = Mathf.Clamp(happiness + 10f, 0f, 100f);
+    //    Debug.Log("Fed");
+    //}
 
 }
