@@ -3,6 +3,9 @@ using UnityEngine;
 public enum GameState
 {
     Egg,
+    Hatching,
+    Baby,
+    Adult,
     Playing,
     Sleeping,
     Dead
@@ -15,13 +18,26 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SleepManager sleepManager;
     [SerializeField] private DeathManager deathManager;
 
-    public GameState currentState = GameState.Egg;
+    private GameState currentState = GameState.Egg;
+
+    //Getter
+    public GameState State => currentState;
 
     public void StartGame(int month, int day)
     {
         currentState = GameState.Playing;
         timeManager.StartTime(month, day);
         Debug.Log($"Game Start {month}/{day}");
+    }
+    public void OhHatched()
+    {
+        currentState = GameState.Baby;
+        Debug.Log("Baby stage");
+    }
+    public void OnGrowToAdult()
+    {
+        currentState=GameState.Adult;
+        Debug.Log("Adult stage");
     }
 
     public void RestartGame()

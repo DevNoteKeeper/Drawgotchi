@@ -6,6 +6,8 @@ public class StatsManager : MonoBehaviour
     private TimeManager timeManager;
     [SerializeField]
     private SleepManager sleepManager;
+    [SerializeField]
+    private GameManager gameManager;
 
     private float hunger = 0f;
     private float happiness = 100f;
@@ -25,6 +27,7 @@ public class StatsManager : MonoBehaviour
     public float Hunger => hunger;
     public float Happiness => happiness;
     public float Energy => energy;
+    
 
 
     // Update is called once per frame
@@ -57,7 +60,21 @@ public class StatsManager : MonoBehaviour
         energy = Mathf.Clamp(energy, -100, 100);
 
         StatsWarning();
-        
+        CheckGrowth();
+
+
+    }
+
+    private void CheckGrowth()
+    {
+        if (gameManager.State != GameState.Baby) return;
+        if (timeManager.CurrentDay < 2) return;
+
+        float avg = (100f - hunger + happiness) / 2f;
+        if(avg > 50f)
+        {
+            gameManager.OnGrowToAdult();
+        }
     }
 
     public void ResetStats()
@@ -85,7 +102,7 @@ public class StatsManager : MonoBehaviour
     public void ApplyFeed(float hungerAmount, float happinessAmount)
     {
         hunger = Mathf.Clamp(hunger - hungerAmount, 0f, 100f);
-        happiness = Mathf.Clamp(happiness - happinessAmount, 0f, 100f);
+        happiness = Mathf.Clamp(happiness + happinessAmount, 0f, 100f);
     }
 
     public void ApplyOverFeed()
