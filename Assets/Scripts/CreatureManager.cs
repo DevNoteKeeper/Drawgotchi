@@ -25,8 +25,15 @@ public class CreatureManager : MonoBehaviour
     [SerializeField] private Sprite adultDislike;
 
     [Header("Common")]
-    [SerializeField] private Sprite egg;
-    [SerializeField] private Sprite hatching;
+    //[SerializeField] private Animator egg;
+    //[SerializeField] private Animator hatching;
+
+    [SerializeField] private Sprite[] eggs;
+    [SerializeField] private Sprite[] hatchings;
+    private int frame = 0;
+    private int index = 0;
+    private int eggSpritePerFrame = 10;
+    private int hatchingSpritePerFrame = 20;
 
 
     // Update is called once per frame
@@ -40,10 +47,10 @@ public class CreatureManager : MonoBehaviour
         switch (gameManager.State)
         {
             case GameState.Egg:
-                creatureImage.sprite = egg;
+                EggAnimation();
                 return;
             case GameState.Hatching:
-                creatureImage.sprite = hatching;
+                HatchingAnimation();
                 return;
 
         }
@@ -68,6 +75,33 @@ public class CreatureManager : MonoBehaviour
         else
         {
             creatureImage.sprite = isBaby ? babyNormal : adultNormal;
+        }
+    }
+
+    private void EggAnimation() {
+        if (index == eggs.Length) return;
+        frame++;
+        if (frame < eggSpritePerFrame) return;
+        creatureImage.sprite = eggs[index];
+        frame = 0;
+        index++;
+        if(index>= eggs.Length)
+        {
+            index = 0;
+        }
+    }
+
+    private void HatchingAnimation()
+    {
+        if (index == hatchings.Length) return;
+        frame++;
+        if (frame < hatchingSpritePerFrame) return;
+        creatureImage.sprite = hatchings[index];
+        frame = 0;
+        index++;
+        if (index >= hatchings.Length)
+        {
+            index = 0;
         }
     }
 }
