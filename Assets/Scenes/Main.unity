@@ -534,6 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FeedManager
   statsManager: {fileID: 103708794}
+  gameManager: {fileID: 0}
 --- !u!114 &103708800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,7 +2139,7 @@ MonoBehaviour:
   brushSize: 5
   endpoint: http://127.0.0.1:8000/predict
   unknownThreshold: 0.55
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 103708801}
 --- !u!1 &1086996386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,6 +2441,7 @@ MonoBehaviour:
   timeManager: {fileID: 103708800}
   statsManager: {fileID: 103708794}
   feedManager: {fileID: 103708799}
+  gameManager: {fileID: 103708801}
   dateText: {fileID: 865759634}
   timeText: {fileID: 1562825258}
   hungerText: {fileID: 2137073006}
