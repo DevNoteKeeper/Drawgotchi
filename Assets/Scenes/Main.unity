@@ -563,6 +563,7 @@ MonoBehaviour:
   timeManager: {fileID: 103708800}
   sleepManager: {fileID: 103708797}
   deathManager: {fileID: 103708798}
+  feedManager: {fileID: 103708799}
 --- !u!1 &189408258
 GameObject:
   m_ObjectHideFlags: 0

@@ -85,9 +85,5 @@ public class FeedManager : MonoBehaviour
         Debug.Log($"Fedd {food}, Hunger -{hungerAmount:F1}, Happiness {happinessAmount:F1}");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

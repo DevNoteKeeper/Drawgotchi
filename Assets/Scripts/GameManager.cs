@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TimeManager timeManager;
     [SerializeField] private SleepManager sleepManager;
     [SerializeField] private DeathManager deathManager;
+    [SerializeField] private FeedManager feedManager;
 
     private GameState currentState = GameState.Egg;
 
@@ -72,5 +74,35 @@ public class GameManager : MonoBehaviour
         StartGame(month, day);
 
     }
+    public void Feed(string label)
+    {
+        if(Enum.TryParse(label, out FoodType food))
+        {
+            feedManager.Feed(food);
+        }
+        else
+        {
+            Debug.Log($"Failed: {label}");
+        }
+    }
+    public void Sleep(String label)
+    {
+        if(label == "Bed")
+        {
+            sleepManager.StartSleep();
+        }
+        else
+        {
+            Debug.Log($"Failed: {label}");
+        }
+    }
+
+    //Test
+    [ContextMenu("Test Feed Vegetable")] void TestVegetable() => Feed("Vegetable");
+    [ContextMenu("Test Feed Meat")] void TestMeat() => Feed("Meat");
+    [ContextMenu("Test Feed Noodle")] void TestNoodle() => Feed("Noodle");
+    [ContextMenu("Test Feed Bread")] void TestBread() => Feed("Bread");
+    [ContextMenu("Test Feed Drink")] void TestDrink() => Feed("Drink");
+    [ContextMenu("Test Sleep")] void TestSleep () => Sleep("Bed");
 
 }
