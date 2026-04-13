@@ -31,7 +31,7 @@ public class FeedManager : MonoBehaviour
         List<FoodType> foods = new List<FoodType>((FoodType[])Enum.GetValues(typeof(FoodType)));
         for(int i = foods.Count-1; i > 0; i--)
         {
-            int j = Random.Range(0, i + 1); ;
+            int j = UnityEngine.Random.Range(0, i + 1); ;
             (foods[i], foods[j]) = (foods[j], foods[i]);
         }
 
@@ -50,11 +50,11 @@ public class FeedManager : MonoBehaviour
     {
         return food switch
         {
-            FoodType.Vegetable => Random.Range(5f, 25f),
-            FoodType.Meat => Random.Range(20f, 50f),
-            FoodType.Noodle => Random.Range(15f, 40f),
-            FoodType.Bread => Random.Range(10f, 35f),
-            FoodType.Drink => Random.Range(5f, 20f),
+            FoodType.Vegetable => UnityEngine.Random.Range(5f, 25f),
+            FoodType.Meat => UnityEngine.Random.Range(20f, 50f),
+            FoodType.Noodle => UnityEngine.Random.Range(15f, 40f),
+            FoodType.Bread => UnityEngine.Random.Range(10f, 35f),
+            FoodType.Drink => UnityEngine.Random.Range(5f, 20f),
             _ => 0f
         };
     }
@@ -63,9 +63,9 @@ public class FeedManager : MonoBehaviour
     {
         return preferences[food] switch
         {
-            FoodPreference.Like => Random.Range(25f, 40f),
-            FoodPreference.Dislike => Random.Range(-30f, -15f),
-            FoodPreference.Neutral => Random.Range(0f, 15f),
+            FoodPreference.Like => UnityEngine.Random.Range(25f, 40f),
+            FoodPreference.Dislike => UnityEngine.Random.Range(-30f, -15f),
+            FoodPreference.Neutral => UnityEngine.Random.Range(0f, 15f),
             _ => 0f
         };
     }
@@ -82,7 +82,7 @@ public class FeedManager : MonoBehaviour
         float happinessAmount = GetHappinessAmount(food);
 
         statsManager.ApplyFeed(hungerAmount, happinessAmount);
-        Debug.Lost($"Fedd {food}, Hunger -{hungerAmount:F1}, Happiness {happinessAmount:F1}");
+        Debug.Log($"Fedd {food}, Hunger -{hungerAmount:F1}, Happiness {happinessAmount:F1}");
     }
 
     // Update is called once per frame

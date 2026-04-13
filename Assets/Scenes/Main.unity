@@ -390,8 +390,11 @@ GameObject:
   - component: {fileID: 103708794}
   - component: {fileID: 103708798}
   - component: {fileID: 103708797}
+  - component: {fileID: 103708801}
+  - component: {fileID: 103708800}
+  - component: {fileID: 103708799}
   m_Layer: 0
-  m_Name: Creature
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,6 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatsManager
   timeManager: {fileID: 1000442600}
   sleepManager: {fileID: 103708797}
+  gameManager: {fileID: 0}
   hungerDecayPerSecond: 0.041666668
   happinessDecayPerSecond: 0.041666668
   energyDecayPerSecond: 0.041666668
@@ -465,7 +469,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -502,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SleepManager
   statsManager: {fileID: 103708794}
-  timeManager: {fileID: 355660013}
+  timeManager: {fileID: 0}
 --- !u!114 &103708798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,6 +520,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathManager
   statsManager: {fileID: 103708794}
+--- !u!114 &103708799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103708793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53710cee24a5214b8173658f29db251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FeedManager
+  statsManager: {fileID: 0}
+--- !u!114 &103708800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103708793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c3350d1eb00cc4184294eeb9d4c292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeManager
+  realMinutesPerDay: 15
+  mealDurationRealSecond: 60
+--- !u!114 &103708801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103708793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8572e609133864aa9f8aa704c1c6c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  statsManager: {fileID: 103708794}
+  timeManager: {fileID: 0}
+  sleepManager: {fileID: 103708797}
+  deathManager: {fileID: 103708798}
 --- !u!1 &189408258
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +850,6 @@ GameObject:
   - component: {fileID: 355660012}
   - component: {fileID: 355660015}
   - component: {fileID: 355660014}
-  - component: {fileID: 355660013}
   m_Layer: 5
   m_Name: Drawgotchi
   m_TagString: Untagged
@@ -830,20 +876,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 902, y: 789}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &355660013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355660011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9c3350d1eb00cc4184294eeb9d4c292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TimeManager
-  realMinutesPerDay: 15
-  mealDurationRealSecond: 60
 --- !u!114 &355660014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1662,7 +1694,6 @@ GameObject:
   - component: {fileID: 871502042}
   - component: {fileID: 871502041}
   - component: {fileID: 871502040}
-  - component: {fileID: 871502043}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1731,23 +1762,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &871502043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871502039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea8572e609133864aa9f8aa704c1c6c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  statsManager: {fileID: 103708794}
-  timeManager: {fileID: 355660013}
-  sleepManager: {fileID: 103708797}
-  deathManager: {fileID: 103708798}
-  currentState: 0
 --- !u!1 &912831658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,7 +2177,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 871502043}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
@@ -2245,7 +2259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea98b49018b95004ea3f58ab6c0a9560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  timeManager: {fileID: 355660013}
+  timeManager: {fileID: 0}
   statsManager: {fileID: 103708794}
   dateText: {fileID: 865759634}
   timeText: {fileID: 1562825258}
@@ -2330,6 +2344,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 355660012}
+  - {fileID: 1470055365}
   - {fileID: 1912910448}
   - {fileID: 912831659}
   - {fileID: 1364812501}
@@ -3196,6 +3211,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443585948}
   m_CullTransparentMesh: 1
+--- !u!1 &1470055364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470055365}
+  - component: {fileID: 1470055367}
+  - component: {fileID: 1470055366}
+  - component: {fileID: 1470055368}
+  m_Layer: 5
+  m_Name: Creature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1470055365
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470055364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093824754}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 246}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1470055366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470055364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1470055367
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470055364}
+  m_CullTransparentMesh: 1
+--- !u!114 &1470055368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470055364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337507d195fe16d4581f4f98a193c21b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CreatureManager
+  statsManager: {fileID: 103708794}
+  sleepManager: {fileID: 103708797}
+  gameManager: {fileID: 103708801}
+  creatureImage: {fileID: 1470055366}
+  babyNormal: {fileID: -2102579598063364249, guid: 7b8515a5edfbc6a43ab33e6a9266f06c, type: 3}
+  babyHungry: {fileID: 4636126334377389085, guid: 8dbea3cd8de5f2b479f7a560e2f4de3e, type: 3}
+  babySleepy: {fileID: -2482305702602611414, guid: ea7877f65be76074bafc6ea9812adba9, type: 3}
+  babySleep: {fileID: -1779302462563148515, guid: 2740aa881988eec42b354c8ee327ba6e, type: 3}
+  babyHappy: {fileID: 1492652777003993246, guid: c1783d2b3d65780449e0b4e69f3452f0, type: 3}
+  babyDislike: {fileID: 4845460559416705146, guid: 68fe1807a8a41e34db2dafdeece848e9, type: 3}
+  adultNormal: {fileID: 7406434248872632793, guid: e8f24f252d762954fbebaccb1d05b103, type: 3}
+  adultHungry: {fileID: 2825071327928545833, guid: 0f5db4c0a79f8f54aa23193a6acc6a9d, type: 3}
+  adultSleepy: {fileID: -3707220208835915513, guid: f1acaa96f9751b4468e4afeb28f4d700, type: 3}
+  adultSleep: {fileID: 6082551879221168077, guid: 0ed8ad89a22d7a848bae55d6ec568477, type: 3}
+  adultHappy: {fileID: -7506680278807210012, guid: c24b2705d0423534a947d75134562369, type: 3}
+  adultDislike: {fileID: -3146469980081823870, guid: 4cfaf3d737e968d46a54545f07b17734, type: 3}
+  egg: {fileID: -4072622106568590741, guid: d11d5a3d905814143be92002c869a163, type: 3}
+  hatching: {fileID: -2627713716925071847, guid: ab3e7bca2c0dd194aa4e6851b148a167, type: 3}
 --- !u!1 &1493852818
 GameObject:
   m_ObjectHideFlags: 0
