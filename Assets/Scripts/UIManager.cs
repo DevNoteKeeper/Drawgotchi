@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     private TimeManager timeManager;
     [SerializeField]
     private StatsManager statsManager;
+    [SerializeField]
+    private FeedManager feedManager;
 
     [SerializeField]
     private TMP_Text dateText;
@@ -18,6 +20,16 @@ public class UIManager : MonoBehaviour
     private TMP_Text happinessText;
     [SerializeField]
     private TMP_Text energyText;
+
+    [SerializeField]
+    private TMP_Text likeText;
+    [SerializeField]
+    private TMP_Text dislikeText;
+    [SerializeField]
+    private TMP_Text neutralText;
+
+    [SerializeField]
+    private TMP_Text drawingExplainText;
 
     [SerializeField]
     private GameObject statsPopup;
@@ -33,10 +45,19 @@ public class UIManager : MonoBehaviour
         happinessText.text = $"Happiness: {statsManager.Happiness:F1}";
         energyText.text = $"Energy: {statsManager.Energy:F1}";
 
+        likeText.text = $"Like: {feedManager.Foods[0]}, {feedManager.Foods[1]}";
+        dislikeText.text = $"Dislike: {feedManager.Foods[2]}, {feedManager.Foods[3]}";
+        neutralText.text = $"Neutral: {feedManager.Foods[4]}";
+
     }
 
     public void ToggleStatsPopup()
     {
         statsPopup.SetActive(!statsPopup.activeSelf);
+    }
+
+    public void UpdateDrawingResult(string explain)
+    {
+        drawingExplainText.text = explain;
     }
 }

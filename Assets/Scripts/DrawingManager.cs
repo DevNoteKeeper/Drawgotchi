@@ -176,6 +176,7 @@ public class DrawingManager : MonoBehaviour
                     gameManager.Feed(finalLabel);
                 }
             } else {
+                gameManager.UnkownDrawing();
                 Debug.Log("Unrecognized drawing: " + json);
             }
             

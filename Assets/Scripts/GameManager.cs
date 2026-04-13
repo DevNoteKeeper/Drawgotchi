@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SleepManager sleepManager;
     [SerializeField] private DeathManager deathManager;
     [SerializeField] private FeedManager feedManager;
+    [SerializeField] private UIManager uiManager;
 
     private GameState currentState = GameState.Egg;
 
@@ -78,6 +79,7 @@ public class GameManager : MonoBehaviour
     {
         if(Enum.TryParse(label, out FoodType food))
         {
+            uiManager.UpdateDrawingResult($"{name} ate {label}");
             feedManager.Feed(food);
         }
         else
@@ -89,12 +91,18 @@ public class GameManager : MonoBehaviour
     {
         if(label == "Bed")
         {
+            uiManager.UpdateDrawingResult($"{name} is Sleeping!");
             sleepManager.StartSleep();
+
         }
         else
         {
             Debug.Log($"Failed: {label}");
         }
+    }
+    public void UnkownDrawing()
+    {
+        uiManager.UpdateDrawingResult("What's that?! Ewwwww....");
     }
 
     public void OnDeath()
