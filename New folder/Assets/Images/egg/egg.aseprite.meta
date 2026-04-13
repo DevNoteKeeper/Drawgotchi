@@ -7,7 +7,7 @@ ScriptedImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  script: {instanceID: 0}
   importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
@@ -126,120 +126,14 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  animatedSpriteImportData:
-  - name: Frame_0
-    originalName: 
-    pivot: {x: 0.5357143, y: -0.03448276}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 28
-      height: 29
-    spriteID: 73133f8371b2b1a49881242577bea6b3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.5714286, y: -0.03448276}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 41
-      width: 28
-      height: 29
-    spriteID: 7932b279e1d35cc448b606c74c270ac9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 41}
-  - name: Frame_2
-    originalName: 
-    pivot: {x: 0.5357143, y: -0.03448276}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 78
-      width: 28
-      height: 29
-    spriteID: 2cf94de94d96ccb4cbe7d23bb80ecf7d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 78}
+  animatedSpriteImportData: []
   spriteSheetImportData: []
   tileSetImportData: []
-  asepriteLayers:
-  - layerIndex: 0
-    uuid:
-      value0: 1858828593
-      value1: 0
-      value2: 0
-      value3: 0
-    guid: 0
-    name: egg
-    layerFlags: 0
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Frame_0
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 1
-        width: 28
-        height: 29
-      spriteId: 73133f8371b2b1a49881242577bea6b3
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 1
-        width: 28
-        height: 29
-      spriteId: 7932b279e1d35cc448b606c74c270ac9
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 1
-        y: 1
-        width: 28
-        height: 29
-      spriteId: 2cf94de94d96ccb4cbe7d23bb80ecf7d
-    linkedCells: []
-    tileCells: []
-    tileSetIndex: 0
-    parentIndex: -1
+  asepriteLayers: []
   tileSets: []
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 64, y: 128}
+  previousTextureSize: {x: 0, y: 0}
