@@ -20,6 +20,7 @@ public enum FoodPreference
 public class FeedManager : MonoBehaviour
 {
     [SerializeField] private StatsManager statsManager;
+    [SerializeField] private GameManager gameManager;
     private Dictionary<FoodType, FoodPreference> preferences = new();
     List<FoodType> foods = new List<FoodType>();
 
@@ -65,6 +66,10 @@ public class FeedManager : MonoBehaviour
 
     private float GetHappinessAmount(FoodType food)
     {
+        if(gameManager.State == GameState.Baby)
+        {
+            return UnityEngine.Random.Range(0f, 15f);
+        }
         return preferences[food] switch
         {
             FoodPreference.Like => UnityEngine.Random.Range(25f, 40f),
@@ -76,7 +81,12 @@ public class FeedManager : MonoBehaviour
 
     public void Feed(FoodType food)
     {
-        if(statsManager.Hunger <= 0f)
+        if(statsManager.Energy <= 0.1f)
+        {
+            Debug.Log("Too tried to eat");
+            return;
+        }
+        if(statsManager.Hunger <= 0.1f)
         {
             statsManager.ApplyOverFeed();
             Debug.Log("Over Feed");

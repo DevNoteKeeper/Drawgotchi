@@ -40,6 +40,7 @@ public class SleepManager : MonoBehaviour
     public void WakeUp()
     {
         isSleeping = false;
+        statsManager.OnWakeUp();
         Debug.Log("Wake up");
     }
 

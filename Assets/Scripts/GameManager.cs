@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
     public void OnGrowToAdult()
     {
         currentState=GameState.Adult;
+        uiManager.UpdatePreference();
         Debug.Log("Adult stage");
     }
 

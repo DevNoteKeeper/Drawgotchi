@@ -33,7 +33,15 @@ public class StatsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hunger += hungerDecayPerSecond * Time.deltaTime;
+        float currentHungryDecay = timeManager.IsMealTime ?
+            hungerDecayPerSecond * 2f : hungerDecayPerSecond;
+
+        hunger += currentHungryDecay * Time.deltaTime;
+
+        float happinessDecay = happinessDecayPerSecond;
+        if (hunger >= 99.99f) {
+            happinessDecay *= 2f;
+        }
 
         if (sleepManager.IsSleeping)
         {

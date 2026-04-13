@@ -31,7 +31,8 @@ public class CreatureManager : MonoBehaviour
     [SerializeField] private Sprite[] eggs;
     [SerializeField] private Sprite[] hatchings;
     private int frame = 0;
-    private int index = 0;
+    private int eggIndex = 0;
+    private int hatchingIndex = 0;
     private int eggSpritePerFrame = 10;
     private int hatchingSpritePerFrame = 20;
 
@@ -79,29 +80,29 @@ public class CreatureManager : MonoBehaviour
     }
 
     private void EggAnimation() {
-        if (index == eggs.Length) return;
+        if (eggIndex == eggs.Length) return;
         frame++;
         if (frame < eggSpritePerFrame) return;
-        creatureImage.sprite = eggs[index];
+        creatureImage.sprite = eggs[eggIndex];
         frame = 0;
-        index++;
-        if(index>= eggs.Length)
+        eggIndex++;
+        if(eggIndex >= eggs.Length)
         {
-            index = 0;
+            eggIndex = 0;
         }
     }
 
     private void HatchingAnimation()
     {
-        if (index == hatchings.Length) return;
+        if (hatchingIndex == hatchings.Length) return;
         frame++;
         if (frame < hatchingSpritePerFrame) return;
-        creatureImage.sprite = hatchings[index];
+        creatureImage.sprite = hatchings[hatchingIndex];
         frame = 0;
-        index++;
-        if (index >= hatchings.Length)
+        hatchingIndex++;
+        if (hatchingIndex >= hatchings.Length)
         {
-            index = 0;
+            hatchingIndex = 0;
         }
     }
 }

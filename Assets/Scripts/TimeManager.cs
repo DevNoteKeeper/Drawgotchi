@@ -30,6 +30,7 @@ public class TimeManager : MonoBehaviour
     public int CurrentHour => currentHour;
     public int CurrentMinute => currentMinute;
     public bool IsNight => isNight;
+    public bool IsMealTime => isMealTime;
     public int GameDay => gameDay;
 
     private void Start()
