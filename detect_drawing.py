@@ -7,17 +7,14 @@ import numpy as np
 import tensorflow as tf
 
 
-MODEL_PATH = Path("best_model.keras")
+MODEL_PATH = Path("trained_model.keras")
 DATASET_DIR = Path("dataset")
 TRAIN_DIR = Path("augmented_data")
 WIN = "canvas"
 
-# Must match train_model.py:
-# image_size = (480, 310) -> (height, width)
+
 IMAGE_SIZE = (96, 96)
 
-# image_dataset_from_directory() defaults to alphabetical class order.
-# Prefer augmented_data because train_model.py trains from that folder.
 CLASS_SOURCE_DIR = TRAIN_DIR if TRAIN_DIR.exists() else DATASET_DIR
 CLASS_NAMES = sorted(
     [p.name for p in CLASS_SOURCE_DIR.iterdir() if p.is_dir() and not p.name.startswith(".")]
