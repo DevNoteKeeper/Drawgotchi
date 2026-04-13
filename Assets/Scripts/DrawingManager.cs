@@ -28,6 +28,8 @@ public class DrawingManager : MonoBehaviour
     private Texture2D texture;
     private Vector2? lastPosition = null;
 
+    public GameManager gameManager;
+
     private void Start()
     {
         int width = Mathf.RoundToInt(drawingPanel.rect.width);   // e.g. 480
@@ -163,7 +165,19 @@ public class DrawingManager : MonoBehaviour
             }
 
             string finalLabel = (result.confidence < unknownThreshold) ? "unknown" : result.label;
-            Debug.Log($"Prediction: {finalLabel} ({result.confidence:F2})");
+
+            if (finalLabel != "unknown")
+            {
+                if (finalLabel == "Bed")
+                {
+                    gameManager.Sleep(finalLabel);
+                }
+                else {
+                    gameManager.Feed(finalLabel);
+                }
+            } else {
+                Debug.Log("Unrecognized drawing: " + json);
+            }
             
         }
 
