@@ -11,6 +11,7 @@ public class TimeManager : MonoBehaviour
     private int currentDay;
     private int currentHour;
     private int currentMinute;
+    private int gameDay;
 
     private float timer;
     private bool isRunning;
@@ -29,6 +30,7 @@ public class TimeManager : MonoBehaviour
     public int CurrentHour => currentHour;
     public int CurrentMinute => currentMinute;
     public bool IsNight => isNight;
+    public int GameDay => gameDay;
 
     private void Start()
     {
@@ -69,6 +71,7 @@ public class TimeManager : MonoBehaviour
         if (currentHour  >= 24)
         {
             currentHour = 0;
+            gameDay++;
             DateTime current = new DateTime(2026, currentMonth, currentDay);
             DateTime next = current.AddDays(1);
 
@@ -107,6 +110,14 @@ public class TimeManager : MonoBehaviour
     private void CheckNightTime()
     {
         isNight = (currentHour >= 21 || currentHour < 7);
+    }
+    public void SetPaused(bool paused)
+    {
+        isRunning = !paused;
+    }
+    public void ResetGameDay()
+    {
+        gameDay = 0;
     }
 
 

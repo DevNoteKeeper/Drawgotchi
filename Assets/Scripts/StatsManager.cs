@@ -68,7 +68,7 @@ public class StatsManager : MonoBehaviour
     private void CheckGrowth()
     {
         if (gameManager.State != GameState.Baby) return;
-        if (timeManager.CurrentDay < 2) return;
+        if (timeManager.GameDay < 2) return;
 
         float avg = (100f - hunger + happiness) / 2f;
         if(avg > 50f)
