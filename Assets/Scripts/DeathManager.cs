@@ -4,6 +4,8 @@ public class DeathManager : MonoBehaviour
 {
     [SerializeField]
     private StatsManager statsManager;
+    [SerializeField]
+    private GameManager gameManager;
 
     private float hungerDeathTimer = 0f;
     private float happinessDeathTimer = 0f;
@@ -25,7 +27,7 @@ public class DeathManager : MonoBehaviour
         }
 
         // happiness Timer
-        if (statsManager.Happiness <= 0f)
+        if (statsManager.Happiness <= 0.1f)
         {
             happinessDeathTimer += Time.deltaTime;
         }
@@ -44,6 +46,7 @@ public class DeathManager : MonoBehaviour
     private void TriggerDeath()
     {
         isDeath = true;
+        gameManager.OnDeath();
         Debug.Log("Creature died");
     }
 }
