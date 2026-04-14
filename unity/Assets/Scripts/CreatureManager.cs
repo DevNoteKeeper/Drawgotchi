@@ -63,6 +63,11 @@ public class CreatureManager : MonoBehaviour
             creatureImage.sprite = isBaby ? babySleep : adultSleep;
             return;
         }
+        else
+        {
+            creatureImage.sprite = isBaby ? babyNormal : adultNormal;
+            return;
+        }
 
         if (statsManager.Hunger >= 70)
         {
