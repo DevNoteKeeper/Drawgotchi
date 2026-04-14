@@ -45,6 +45,7 @@ public class DrawingManager : MonoBehaviour
 
     public void ClearCanvas()
     {
+        Pointer pointer = Pen.current ?? Mouse.current as Pointer;
         if (texture == null) return;
 
         Color[] pixels = new Color[texture.width * texture.height];
