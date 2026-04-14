@@ -21,6 +21,7 @@ public class FeedManager : MonoBehaviour
 {
     [SerializeField] private StatsManager statsManager;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private SleepManager sleepManager;
     private Dictionary<FoodType, FoodPreference> preferences = new();
     List<FoodType> foods = new List<FoodType>();
 
@@ -77,6 +78,7 @@ public class FeedManager : MonoBehaviour
 
     public void Feed(FoodType food)
     {
+        if (sleepManager.IsSleeping) return;
         if(statsManager.Energy <= 0.1f)
         {
             Debug.Log("Too tried to eat");

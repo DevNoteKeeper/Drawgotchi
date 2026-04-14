@@ -8,7 +8,9 @@ public class SleepManager : MonoBehaviour
     private TimeManager timeManager;
 
     private bool isSleeping = false;
-    
+    private float sleepTimer = 0f;
+    private const float SLEEP_DURATION = 60f;
+
     // Getter
     public bool IsSleeping => isSleeping;
 
@@ -20,26 +22,34 @@ public class SleepManager : MonoBehaviour
             if(statsManager.Energy <= -100f)
             {
                 StartSleep();
+                return;
             }
         }
 
-        if (isSleeping)
+        sleepTimer += Time.deltaTime;
+     
+        if (sleepTimer >= SLEEP_DURATION)
         {
-            if(timeManager.CurrentHour == 7 && timeManager.CurrentMinute == 0)
-            {
                 WakeUp();
-            }
+
         }
     }
     public void StartSleep()
     {
+        if (isSleeping)
+        {
+            return;
+        }
         isSleeping = true;
+        sleepTimer = 0f;
         Debug.Log("Sleep start");
     }
 
     public void WakeUp()
     {
         isSleeping = false;
+        sleepTimer = 0f;
+        timeManager.AdvancedToNextMorning();
         statsManager.OnWakeUp();
         Debug.Log("Wake up");
     }

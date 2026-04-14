@@ -90,6 +90,11 @@ public class GameManager : MonoBehaviour
     }
     public void Feed(string label)
     {
+        if (sleepManager.IsSleeping)
+        {
+            uiManager.UpdateDrawingResult($"{creatureName} is sleeping zzzzz");
+            return;
+        }
         string formattedLabel = char.ToUpper(label[0]) + label.Substring(1);
 
         if (Enum.TryParse(formattedLabel, out FoodType food))
@@ -104,6 +109,12 @@ public class GameManager : MonoBehaviour
     }
     public void Sleep(String label)
     {
+        if (sleepManager.IsSleeping)
+        {
+            uiManager.UpdateDrawingResult($"{creatureName} is sleeping zzzzz");
+            return;
+        }
+
         string formattedLabel = char.ToUpper(label[0]) + label.Substring(1);
         if (formattedLabel == "Bed")
         {

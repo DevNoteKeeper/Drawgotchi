@@ -80,6 +80,21 @@ public class TimeManager : MonoBehaviour
             currentDay = next.Day;
         }
     }
+    public void AdvancedToNextMorning()
+    {
+        if(currentHour >= 7)
+        {
+            DateTime current = new DateTime(2026, currentMonth, currentDay);
+            DateTime next = current.AddDays(1);
+            currentMonth = next.Month;
+            currentDay = next.Day;
+            gameDay++;
+        }
+
+        currentHour = 7;
+        currentMinute = 0;
+        isNight = false;
+    }
 
     public bool MealTimer()
     {
