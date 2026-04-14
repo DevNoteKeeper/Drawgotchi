@@ -51,12 +51,15 @@ public class GameManager : MonoBehaviour
         currentState = GameState.Baby;
         timeManager.SetPaused(false);
         timeManager.ResetGameDay();
+        uiManager.ShowGrowthMSG(GameState.Baby, creatureName);
         Debug.Log("Baby stage");
     }
 
     public void OnGrowToAdult()
     {
         currentState=GameState.Adult;
+        uiManager.ShowGrowthMSG(GameState.Adult, creatureName);
+        Invoke("ShowPreferenceMessage", 3f);
         uiManager.UpdatePreference();
         Debug.Log("Adult stage");
     }

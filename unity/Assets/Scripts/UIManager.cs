@@ -92,4 +92,24 @@ public class UIManager : MonoBehaviour
             neutralText.text = $"Neutral: {feedManager.Foods[4]}";
         }
     }
+
+    public void ShowGrowthMSG(GameState newState, string name)
+    {
+        string msg = newState switch
+        {
+            GameState.Baby => $"Your {name} hatched!",
+            GameState.Adult => $"Your {name} grew up!",
+            _ => ""
+        };
+
+        if (!string.IsNullOrEmpty(msg)) { 
+            UpdateDrawingResult(msg);
+        }
+
+    }
+
+    public void ShowPreferenceUnlockedMSG()
+    {
+        UpdateDrawingResult("Food Preferences unlocked!");
+    }
 }
