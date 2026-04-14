@@ -14,13 +14,13 @@ public class StatsManager : MonoBehaviour
     private float energy = 100f;
 
     [SerializeField]
-    private float hungerDecayPerSecond = 2.5f / 60f;
+    private float hungerDecayPerSecond = 5f / 60f;
     [SerializeField]
-    private float happinessDecayPerSecond = 2.5f / 60f;
+    private float happinessDecayPerSecond = 5f / 60f;
     [SerializeField]
-    private float energyDecayPerSecond = 2.5f / 60f;
+    private float energyDecayPerSecond = 5f / 60f;
     [SerializeField]
-    private float energyNightDecayPerSecond = 12f / 60f;
+    private float energyNightDecayPerSecond = 20f / 60f;
 
 
     // Getter
@@ -45,11 +45,11 @@ public class StatsManager : MonoBehaviour
 
         if (sleepManager.IsSleeping)
         {
-            happiness -= happinessDecayPerSecond * 0.5f * Time.deltaTime;
+            happiness -= happinessDecay * 0.5f * Time.deltaTime;
         }
         else
         {
-            happiness -= happinessDecayPerSecond * Time.deltaTime;
+            happiness -= happinessDecay * Time.deltaTime;
         }
             
         

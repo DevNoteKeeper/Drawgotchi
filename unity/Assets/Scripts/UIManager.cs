@@ -37,7 +37,7 @@ public class UIManager : MonoBehaviour
     private GameObject statsPopup;
 
     private float subtitleTimer = 0f;
-    private float subtitleDuration = 3f;
+    private float subtitleDuration = 5f;
 
     private void Start()
     {
@@ -76,12 +76,12 @@ public class UIManager : MonoBehaviour
 
     public void UpdatePreference()
     {
-        if (gameManager.State == GameState.Baby)
+        if (gameManager.State != GameState.Adult)
         {
             string preferenceText = "Neutral: ";
 
             for (int i = 0; i < 5; i++) {
-                preferenceText += feedManager.Foods[i];
+                preferenceText = preferenceText + feedManager.Foods[i] + "  ";
             }
             neutralText.text = preferenceText;
         }

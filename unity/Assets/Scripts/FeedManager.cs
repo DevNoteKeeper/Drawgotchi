@@ -26,12 +26,8 @@ public class FeedManager : MonoBehaviour
 
     //Getter
     public List<FoodType> Foods => foods;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        AssignPreference();
-    }
-    private void AssignPreference()
+
+    public void AssignPreference()
     {
         foods = new List<FoodType>((FoodType[])Enum.GetValues(typeof(FoodType)));
         for(int i = foods.Count-1; i > 0; i--)

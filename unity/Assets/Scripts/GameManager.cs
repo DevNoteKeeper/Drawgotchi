@@ -22,17 +22,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] private FeedManager feedManager;
     [SerializeField] private UIManager uiManager;
 
+    private string creatureName;
+
     private GameState currentState = GameState.Egg;
 
     //Getter
     public GameState State => currentState;
 
-    public void StartGame(int month, int day)
+    public void StartGame(string name, int month, int day)
     {
         currentState = GameState.Egg;
         timeManager.StartTime(month, day);
         timeManager.SetPaused(true);
+        creatureName = name;
         Debug.Log($"Game Start {month}/{day}");
+        feedManager.AssignPreference();
         Invoke("OhHatched", 3f);
     }
     public void OhHatched()
@@ -73,14 +77,16 @@ public class GameManager : MonoBehaviour
         int day = PlayerPrefs.GetInt("day");
 
         Debug.Log($"Creature: {name}, {month}/{day}");
-        StartGame(month, day);
+        StartGame(name, month, day);
 
     }
     public void Feed(string label)
     {
-        if(Enum.TryParse(label, out FoodType food))
+        string formattedLabel = char.ToUpper(label[0]) + label.Substring(1);
+
+        if (Enum.TryParse(formattedLabel, out FoodType food))
         {
-            uiManager.UpdateDrawingResult($"{name} ate {label}");
+            uiManager.UpdateDrawingResult($"{creatureName} ate {label}");
             feedManager.Feed(food);
         }
         else
@@ -90,9 +96,10 @@ public class GameManager : MonoBehaviour
     }
     public void Sleep(String label)
     {
-        if(label == "Bed")
+        string formattedLabel = char.ToUpper(label[0]) + label.Substring(1);
+        if (formattedLabel == "Bed")
         {
-            uiManager.UpdateDrawingResult($"{name} is Sleeping!");
+            uiManager.UpdateDrawingResult($"{creatureName} is Sleeping!");
             sleepManager.StartSleep();
 
         }
