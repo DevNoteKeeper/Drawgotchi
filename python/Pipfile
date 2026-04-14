@@ -8,7 +8,7 @@ numpy = "*"
 opencv-python = "*"
 keras-tuner = "*"
 tensorboard = "*"
-tensorflow = {extras = ["and-cuda"], version = "*"}
+tensorflow = "*"
 scipy = "*"
 
 [dev-packages]
