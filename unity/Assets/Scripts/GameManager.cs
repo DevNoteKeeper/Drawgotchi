@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log($"Failed: {label}");
+            Debug.Log($"Failed: {formattedLabel}");
         }
     }
     public void Sleep(String label)
@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log($"Failed: {label}");
+            Debug.Log($"Failed: {formattedLabel}");
         }
     }
     public void UnkownDrawing()

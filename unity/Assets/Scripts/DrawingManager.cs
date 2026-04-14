@@ -169,7 +169,7 @@ public class DrawingManager : MonoBehaviour
 
             if (finalLabel != "unknown")
             {
-                if (finalLabel == "Bed")
+                if (finalLabel == "bed")
                 {
                     gameManager.Sleep(finalLabel);
                 }
