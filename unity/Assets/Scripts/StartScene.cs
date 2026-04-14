@@ -61,4 +61,8 @@ public class StartScene : MonoBehaviour
         }
         return true;
     }
+    public void QuiteGame()
+    {
+        Application.Quit();
+    }
 }

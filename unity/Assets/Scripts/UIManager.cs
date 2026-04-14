@@ -34,6 +34,9 @@ public class UIManager : MonoBehaviour
     private TMP_Text drawingExplainText;
 
     [SerializeField]
+    private TMP_Text creatureStateText;
+
+    [SerializeField]
     private GameObject statsPopup;
 
     private float subtitleTimer = 0f;
@@ -42,6 +45,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         UpdatePreference();
+        drawingExplainText.text = "";
     }
     // Update is called once per frame
     void Update()
@@ -111,5 +115,10 @@ public class UIManager : MonoBehaviour
     public void ShowPreferenceUnlockedMSG()
     {
         UpdateDrawingResult("Food Preferences unlocked!");
+    }
+
+    public void UpdateCreatueState(GameState state, string name)
+    {
+        creatureStateText.text = $"{name}: {state}";
     }
 }

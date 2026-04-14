@@ -8,4 +8,8 @@ public class DeathSceneManager : MonoBehaviour
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Start");
     }
+    public void QuiteGame()
+    {
+        Application.Quit();
+    }
 }

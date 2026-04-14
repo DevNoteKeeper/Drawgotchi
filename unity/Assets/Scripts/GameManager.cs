@@ -32,9 +32,11 @@ public class GameManager : MonoBehaviour
     public void StartGame(string name, int month, int day)
     {
         currentState = GameState.Egg;
+        
         timeManager.StartTime(month, day);
         timeManager.SetPaused(true);
         creatureName = name;
+        uiManager.UpdateCreatueState(GameState.Egg, creatureName);
         Debug.Log($"Game Start {month}/{day}");
         feedManager.AssignPreference();
         Invoke("OhHatched", 3f);
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
     public void OhHatched()
     {
         currentState = GameState.Hatching;
+        uiManager.UpdateCreatueState(GameState.Hatching, creatureName);
         Invoke("ToBaby", 3f);
         Debug.Log("Hatching stage");
     }
@@ -49,6 +52,7 @@ public class GameManager : MonoBehaviour
     public void ToBaby()
     {
         currentState = GameState.Baby;
+        uiManager.UpdateCreatueState(GameState.Baby, creatureName);
         timeManager.SetPaused(false);
         timeManager.ResetGameDay();
         uiManager.ShowGrowthMSG(GameState.Baby, creatureName);
@@ -58,6 +62,7 @@ public class GameManager : MonoBehaviour
     public void OnGrowToAdult()
     {
         currentState=GameState.Adult;
+        uiManager.UpdateCreatueState(GameState.Adult, creatureName);
         uiManager.ShowGrowthMSG(GameState.Adult, creatureName);
         Invoke("ShowPreferenceMessage", 3f);
         uiManager.UpdatePreference();
@@ -121,6 +126,11 @@ public class GameManager : MonoBehaviour
         currentState = GameState.Dead;
         SceneManager.LoadScene("Death");
         Debug.Log("GameOver");
+    }
+
+    public void QuiteGame()
+    {
+        Application.Quit();
     }
 
     //Test
