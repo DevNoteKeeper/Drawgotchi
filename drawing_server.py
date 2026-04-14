@@ -8,12 +8,10 @@ import tensorflow as tf
 
 MODEL_PATH = Path("trained_model.keras")
 DATASET_DIR = Path("dataset")
-TRAIN_DIR = Path("augmented_data")
 IMAGE_SIZE = (96, 96)
 CONFIDENCE_THRESHOLD = 0.55
 
-CLASS_SOURCE_DIR = TRAIN_DIR if TRAIN_DIR.exists() else DATASET_DIR
-CLASS_NAMES = sorted([p.name for p in CLASS_SOURCE_DIR.iterdir() if p.is_dir() and not p.name.startswith(".")])
+CLASS_NAMES = sorted([p.name for p in DATASET_DIR.iterdir() if p.is_dir() and not p.name.startswith(".")])
 
 model = tf.keras.models.load_model(MODEL_PATH)
 

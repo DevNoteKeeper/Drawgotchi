@@ -15,6 +15,8 @@ def load_data():
         color_mode="grayscale",
     )
 
+    class_names = train_ds.class_names
+
     val_ds = tf.keras.utils.image_dataset_from_directory(
         "augmented_data",
         validation_split=0.2,
@@ -30,7 +32,7 @@ def load_data():
     train_ds = train_ds.cache().shuffle(1000).prefetch(buffer_size=AUTOTUNE)
     val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
 
-    return train_ds, val_ds
+    return train_ds, val_ds, class_names
 
 
 def build_model(num_classes):
@@ -113,8 +115,8 @@ def confusion_matrix(model, val_ds):
 
 
 def main():
-    train_ds, val_ds = load_data()
-    model = build_model(6)
+    train_ds, val_ds, class_names = load_data()
+    model = build_model(len(class_names))
     train_model(model, train_ds, val_ds)
     confusion_matrix(model, val_ds)
 
