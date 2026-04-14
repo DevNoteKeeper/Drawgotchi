@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 import tensorflow as tf
 
-MODEL_PATH = Path("model.keras")
+MODEL_PATH = Path("trained_model.keras")
 DATASET_DIR = Path("dataset")
 TRAIN_DIR = Path("augmented_data")
 IMAGE_SIZE = (96, 96)
