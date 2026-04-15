@@ -87,3 +87,4 @@ crashlytics-build.properties
 **/Library/**/Burst*
 **/Library/**/libburst*
 augmented_data
+**/Android**
