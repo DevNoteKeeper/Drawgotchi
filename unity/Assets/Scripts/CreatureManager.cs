@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,6 +37,9 @@ public class CreatureManager : MonoBehaviour
     private int eggSpritePerFrame = 10;
     private int hatchingSpritePerFrame = 20;
 
+    private bool isTemporaryExpression = false;
+
+
 
     // Update is called once per frame
     void Update()
@@ -45,6 +49,8 @@ public class CreatureManager : MonoBehaviour
 
     private void UpdateCreatureSprite()
     {
+        if (isTemporaryExpression) return;
+
         switch (gameManager.State)
         {
             case GameState.Egg:
@@ -66,7 +72,7 @@ public class CreatureManager : MonoBehaviour
         else
         {
             creatureImage.sprite = isBaby ? babyNormal : adultNormal;
-            return;
+            
         }
 
         if (statsManager.Hunger >= 70)
@@ -109,5 +115,34 @@ public class CreatureManager : MonoBehaviour
         {
             hatchingIndex = 0;
         }
+    }
+
+    public void ShowTemporaryExpression(bool isBaby, Sprite img, float duration = 3f)
+    {
+        if (isTemporaryExpression) return;
+
+        StartCoroutine(TemporaryExpressionCoroutine(isBaby, img, duration));
+    }
+
+    public IEnumerator TemporaryExpressionCoroutine(bool isBaby, Sprite img, float duration)
+    {
+        isTemporaryExpression = true;
+        creatureImage.sprite = img;
+        yield return new WaitForSeconds(duration);
+        isTemporaryExpression = false;
+    }
+
+    public void showDislike()
+    {
+        bool isBaby = gameManager.State == GameState.Baby;
+        Sprite dislikeSprite = isBaby ? babyDislike : adultDislike;
+        ShowTemporaryExpression(isBaby, dislikeSprite);
+    }
+
+    public void showlike()
+    {
+        bool isBaby = gameManager.State == GameState.Baby;
+        Sprite likeSprite = isBaby ? babyHappy : adultHappy;
+        ShowTemporaryExpression(isBaby, likeSprite);
     }
 }

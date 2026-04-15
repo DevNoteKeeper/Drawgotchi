@@ -10,7 +10,7 @@ public class DeathManager : MonoBehaviour
     private float hungerDeathTimer = 0f;
     private float happinessDeathTimer = 0f;
     private bool isDeath = false;
-    private const float DEATH_THREASHOLD_TIME = 60f;
+    private const float DEATH_THREASHOLD_TIME = 10f;
 
     private void Update()
     {

@@ -135,6 +135,12 @@ public class DrawingManager : MonoBehaviour
 
     public void SendDrawing()
     {
+        if(gameManager.State == GameState.Egg || gameManager.State == GameState.Hatching)
+        {
+            gameManager.UnkownDrawing("Shh..... the egg needs peace");
+            ClearCanvas();
+            return;
+        }
         StartCoroutine(SendDrawingCoroutine());
     }
 
@@ -177,7 +183,7 @@ public class DrawingManager : MonoBehaviour
                     gameManager.Feed(finalLabel);
                 }
             } else {
-                gameManager.UnkownDrawing();
+                gameManager.UnkownDrawing("What's that?! Ewwwww....");
                 Debug.Log("Unrecognized drawing: " + json);
             }
             

@@ -6,10 +6,12 @@ public class SleepManager : MonoBehaviour
     private StatsManager statsManager;
     [SerializeField]
     private TimeManager timeManager;
+    [SerializeField]
+    private UIManager uIManager;
 
     private bool isSleeping = false;
     private float sleepTimer = 0f;
-    private const float SLEEP_DURATION = 60f;
+    private const float SLEEP_DURATION = 10f;
 
     // Getter
     public bool IsSleeping => isSleeping;
@@ -28,7 +30,7 @@ public class SleepManager : MonoBehaviour
 
         sleepTimer += Time.deltaTime;
      
-        if (sleepTimer >= SLEEP_DURATION)
+        if (sleepTimer >= SLEEP_DURATION && isSleeping)
         {
                 WakeUp();
 
@@ -51,6 +53,7 @@ public class SleepManager : MonoBehaviour
         sleepTimer = 0f;
         timeManager.AdvancedToNextMorning();
         statsManager.OnWakeUp();
+        uIManager.UpdateDrawingResult("Good Morning!");
         Debug.Log("Wake up");
     }
 

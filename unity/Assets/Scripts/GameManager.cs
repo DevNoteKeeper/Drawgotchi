@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         creatureName = name;
         uiManager.UpdateCreatueState(GameState.Egg, creatureName);
         Debug.Log($"Game Start {month}/{day}");
-        feedManager.AssignPreference();
+        feedManager.Initialize();
         Invoke("OhHatched", 3f);
     }
     public void OhHatched()
@@ -64,7 +64,9 @@ public class GameManager : MonoBehaviour
         currentState=GameState.Adult;
         uiManager.UpdateCreatueState(GameState.Adult, creatureName);
         uiManager.ShowGrowthMSG(GameState.Adult, creatureName);
-        Invoke("ShowPreferenceMessage", 3f);
+
+        Invoke("ShowPreferenceUnlockedMSG", 3f);
+        uiManager.ShowPreferenceUnlockedMSG();
         uiManager.UpdatePreference();
         Debug.Log("Adult stage");
     }
@@ -90,6 +92,9 @@ public class GameManager : MonoBehaviour
     }
     public void Feed(string label)
     {
+        if (currentState == GameState.Egg || currentState == GameState.Hatching) {
+            uiManager.UpdateDrawingResult("Too early! Let's it be born first!");
+        }
         if (sleepManager.IsSleeping)
         {
             uiManager.UpdateDrawingResult($"{creatureName} is sleeping zzzzz");
@@ -109,6 +114,10 @@ public class GameManager : MonoBehaviour
     }
     public void Sleep(String label)
     {
+        if (currentState == GameState.Egg || currentState == GameState.Hatching)
+        {
+            uiManager.UpdateDrawingResult("Too early! Let's it be born first!");
+        }
         if (sleepManager.IsSleeping)
         {
             uiManager.UpdateDrawingResult($"{creatureName} is sleeping zzzzz");
@@ -127,9 +136,9 @@ public class GameManager : MonoBehaviour
             Debug.Log($"Failed: {formattedLabel}");
         }
     }
-    public void UnkownDrawing()
+    public void UnkownDrawing(string msg)
     {
-        uiManager.UpdateDrawingResult("What's that?! Ewwwww....");
+        uiManager.UpdateDrawingResult(msg);
     }
 
     public void OnDeath()

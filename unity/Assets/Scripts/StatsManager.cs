@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class StatsManager : MonoBehaviour
 {
@@ -117,6 +118,7 @@ public class StatsManager : MonoBehaviour
     {
         energy = Mathf.Clamp(energy - 10f, -100f, 100f);
         happiness = Mathf.Clamp(happiness - 10f, 0f, 100f);
+        Debug.Log("Over Feed");
     }
 
     //public void Feed()

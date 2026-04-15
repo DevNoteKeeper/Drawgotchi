@@ -121,4 +121,9 @@ public class UIManager : MonoBehaviour
     {
         creatureStateText.text = $"{name}: {state}";
     }
+
+    public void UpdateOverFeed()
+    {
+        drawingExplainText.text = "I'm too Full!";
+    }
 }

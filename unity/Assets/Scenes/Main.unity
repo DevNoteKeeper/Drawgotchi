@@ -640,6 +640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SleepManager
   statsManager: {fileID: 103708794}
   timeManager: {fileID: 103708800}
+  uIManager: {fileID: 1093824750}
 --- !u!114 &103708798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,6 +670,8 @@ MonoBehaviour:
   statsManager: {fileID: 103708794}
   gameManager: {fileID: 103708801}
   sleepManager: {fileID: 103708797}
+  uIManager: {fileID: 1093824750}
+  creatureManager: {fileID: 1470055368}
 --- !u!114 &103708800
 MonoBehaviour:
   m_ObjectHideFlags: 0

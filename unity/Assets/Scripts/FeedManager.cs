@@ -22,19 +22,36 @@ public class FeedManager : MonoBehaviour
     [SerializeField] private StatsManager statsManager;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private SleepManager sleepManager;
+    [SerializeField] private UIManager uIManager;
+    [SerializeField] private CreatureManager creatureManager;
     private Dictionary<FoodType, FoodPreference> preferences = new();
     List<FoodType> foods = new List<FoodType>();
+    private bool isInitialized = false;
 
     //Getter
     public List<FoodType> Foods => foods;
 
+    public void Initialize()
+    {
+        if(isInitialized) return;
+        isInitialized = true;
+        AssignPreference();
+    }
+
     public void AssignPreference()
     {
+        preferences.Clear();
+
         foods = new List<FoodType>((FoodType[])Enum.GetValues(typeof(FoodType)));
         for(int i = foods.Count-1; i > 0; i--)
         {
             int j = UnityEngine.Random.Range(0, i + 1); ;
             (foods[i], foods[j]) = (foods[j], foods[i]);
+        }
+
+        foreach(FoodType food in foods)
+        {
+            preferences[food] = FoodPreference.Neutral;
         }
 
         preferences[foods[0]] = FoodPreference.Like;
@@ -67,26 +84,48 @@ public class FeedManager : MonoBehaviour
         {
             return UnityEngine.Random.Range(0f, 15f);
         }
-        return preferences[food] switch
+
+        FoodPreference pref;
+        if (preferences.ContainsKey(food))
         {
-            FoodPreference.Like => UnityEngine.Random.Range(25f, 40f),
-            FoodPreference.Dislike => UnityEngine.Random.Range(-30f, -15f),
-            FoodPreference.Neutral => UnityEngine.Random.Range(0f, 15f),
-            _ => 0f
-        };
+            pref = preferences[food];
+        }
+        else
+        {
+            pref = FoodPreference.Neutral;
+        }
+
+        if (pref == FoodPreference.Like) {
+            return UnityEngine.Random.Range(25f, 40f);
+        }
+        if (pref == FoodPreference.Dislike)
+        {
+            return UnityEngine.Random.Range(-30f, -15f);
+        }
+        if (pref == FoodPreference.Neutral)
+        {
+            return UnityEngine.Random.Range(0f, 15f);
+        }
+
+        return 0f;
+
     }
 
     public void Feed(FoodType food)
     {
         if (sleepManager.IsSleeping) return;
-        if(statsManager.Energy <= 0.1f)
+        if(statsManager.Energy <= 0.5f)
         {
+            uIManager.UpdateDrawingResult("Too tied to eat.....");
             Debug.Log("Too tried to eat");
+            creatureManager.showDislike();
             return;
         }
-        if(statsManager.Hunger <= 0.1f)
+        if(statsManager.Hunger <= 0.5f)
         {
             statsManager.ApplyOverFeed();
+            uIManager.UpdateOverFeed();
+            creatureManager.showDislike();
             Debug.Log("Over Feed");
             return;
         }
@@ -94,6 +133,16 @@ public class FeedManager : MonoBehaviour
         float happinessAmount = GetHappinessAmount(food);
 
         statsManager.ApplyFeed(hungerAmount, happinessAmount);
+
+        if(happinessAmount < 0f)
+        {
+            creatureManager.showDislike();
+        }
+
+        if (happinessAmount >= 25f)
+        {
+            creatureManager.showlike();
+        }
         Debug.Log($"Fedd {food}, Hunger -{hungerAmount:F1}, Happiness {happinessAmount:F1}");
     }
 
