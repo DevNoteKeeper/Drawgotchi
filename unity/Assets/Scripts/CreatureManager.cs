@@ -145,4 +145,18 @@ public class CreatureManager : MonoBehaviour
         Sprite likeSprite = isBaby ? babyHappy : adultHappy;
         ShowTemporaryExpression(isBaby, likeSprite);
     }
+
+    public void SetCreatureFade(float a)
+    {
+        Color c = creatureImage.color;
+        c.a = a;
+        creatureImage.color = c;
+    }
+
+    public void ResetFade()
+    {
+        Color c = creatureImage.color;
+        c.a = 1f;
+        creatureImage.color = c;
+    }
 }

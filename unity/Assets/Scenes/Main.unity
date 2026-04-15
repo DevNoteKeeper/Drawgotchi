@@ -655,6 +655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeathManager
   statsManager: {fileID: 103708794}
   gameManager: {fileID: 103708801}
+  uiManager: {fileID: 1093824750}
+  creatureManager: {fileID: 1470055368}
 --- !u!114 &103708799
 MonoBehaviour:
   m_ObjectHideFlags: 0

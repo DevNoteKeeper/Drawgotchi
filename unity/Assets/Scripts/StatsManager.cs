@@ -68,7 +68,7 @@ public class StatsManager : MonoBehaviour
         happiness = Mathf.Clamp(happiness, 0, 100);
         energy = Mathf.Clamp(energy, -100, 100);
 
-        StatsWarning();
+        //StatsWarning();
         CheckGrowth();
 
 
@@ -93,15 +93,15 @@ public class StatsManager : MonoBehaviour
         energy = 100f;
     }
 
-    public void StatsWarning()
-    {
-        if (hunger >= 70f)
-            Debug.LogWarning("Hunger Warning!");
-        if (happiness <= 30f)
-            Debug.LogWarning("Happiness Warning!");
-        if (energy <= 30f)
-            Debug.LogWarning("Energy Warning!");
-    }
+    //public void StatsWarning()
+    //{
+    //    if (hunger >= 70f)
+    //        Debug.LogWarning("Hunger Warning!");
+    //    if (happiness <= 30f)
+    //        Debug.LogWarning("Happiness Warning!");
+    //    if (energy <= 30f)
+    //        Debug.LogWarning("Energy Warning!");
+    //}
     public void OnWakeUp()
     {
         energy = 100f;
