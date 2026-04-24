@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.Hatching;
         uiManager.UpdateCreatueState(GameState.Hatching, creatureName);
-        Invoke("ToBaby", 3f);
+        //Invoke("ToBaby", 3f);
         Debug.Log("Hatching stage");
     }
 

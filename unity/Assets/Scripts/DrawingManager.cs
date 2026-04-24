@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.Networking;
+using System.Security;
 
 [System.Serializable]
 public class PredictResponse
@@ -41,6 +42,28 @@ public class DrawingManager : MonoBehaviour
         drawingCanvas.texture = texture;
 
         ClearCanvas();
+
+        StartCoroutine(WaitForServer());
+    }
+
+    private IEnumerator WaitForServer()
+    {
+        string healthUrl = endpoint.Replace("/predict", "/health");
+
+        whild(true){
+            using (var req = UnityWebRequest.Get(healthUrl))
+            {
+                req.timeout = 5;
+                yield return req.SendWebRequest();
+
+                if(req.result == UnityWebRequest.Result.Success)
+                {
+                    gameManager.ToBaby();
+                    yield break;
+                }
+            }
+            yield return new WaitForSeconds(5f);
+        }
     }
 
     public void ClearCanvas()
