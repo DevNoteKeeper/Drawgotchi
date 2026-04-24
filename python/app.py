@@ -6,14 +6,6 @@ import cv2
 import numpy as np
 import tensorflow as tf
 
-app = FastAPI()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["POST"],
-    allow_headers=["*"],
-)
-
 MODEL_PATH = Path("trained_model.keras")
 DATASET_DIR = Path("dataset")
 TRAIN_DIR = Path("augmented_data")
