@@ -58,7 +58,7 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        if self.path == "/haelth":
+        if self.path == "/health":
             body =b'{"status":"ok"}'
             self.send_response(200)
             self.send_header("Content-Type", "application/json")

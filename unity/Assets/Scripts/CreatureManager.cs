@@ -34,8 +34,8 @@ public class CreatureManager : MonoBehaviour
     private int frame = 0;
     private int eggIndex = 0;
     private int hatchingIndex = 0;
-    private int eggSpritePerFrame = 10;
-    private int hatchingSpritePerFrame = 20;
+    private int eggSpritePerFrame = 200;
+    private int hatchingSpritePerFrame = 300;
 
     private bool isTemporaryExpression = false;
 
