@@ -50,7 +50,7 @@ public class DrawingManager : MonoBehaviour
     {
         string healthUrl = endpoint.Replace("/predict", "/health");
 
-        whild(true){
+        while(true){
             using (var req = UnityWebRequest.Get(healthUrl))
             {
                 req.timeout = 5;
