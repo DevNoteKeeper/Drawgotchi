@@ -88,3 +88,5 @@ crashlytics-build.properties
 **/Library/**/libburst*
 augmented_data
 **/Android**
+**/web build/**
+web build.zip

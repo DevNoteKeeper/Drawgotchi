@@ -22,7 +22,7 @@ public class DrawingManager : MonoBehaviour
     [SerializeField] private int brushSize = 6;
 
     [Header("Inference")]
-    [SerializeField] private string endpoint = "http://127.0.0.1:8000/predict";
+    [SerializeField] private string endpoint = "https://drawgotchi.onrender.com/predict";
     [SerializeField] private float unknownThreshold = 0.55f;
 
     private Texture2D texture;
