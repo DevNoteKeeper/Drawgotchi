@@ -34,8 +34,8 @@ public class CreatureManager : MonoBehaviour
     private int frame = 0;
     private int eggIndex = 0;
     private int hatchingIndex = 0;
-    private int eggSpritePerFrame = 200;
-    private int hatchingSpritePerFrame = 300;
+    private int eggSpritePerFrame = 20;
+    private int hatchingSpritePerFrame = 30;
 
     private bool isTemporaryExpression = false;
 
@@ -114,6 +114,8 @@ public class CreatureManager : MonoBehaviour
         if (hatchingIndex >= hatchings.Length)
         {
             hatchingIndex = 0;
+            gameManager.SetHatchingDone();
+            return;
         }
     }
 

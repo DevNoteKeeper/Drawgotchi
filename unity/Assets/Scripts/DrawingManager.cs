@@ -58,7 +58,8 @@ public class DrawingManager : MonoBehaviour
 
                 if(req.result == UnityWebRequest.Result.Success)
                 {
-                    gameManager.ToBaby();
+                    gameManager.SetServerReady();
+                    Debug.Log("Move to next");
                     yield break;
                 }
             }

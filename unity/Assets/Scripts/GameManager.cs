@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
 
     private GameState currentState = GameState.Egg;
 
+    private bool isServerReady = false;
+    private bool isHatchingDone = false;
+
+
     //Getter
     public GameState State => currentState;
 
@@ -41,6 +45,25 @@ public class GameManager : MonoBehaviour
         feedManager.Initialize();
         Invoke("OhHatched", 3f);
     }
+    public void SetServerReady()
+    {
+        isServerReady = true;
+        TryToBaby();
+    }
+
+    public void SetHatchingDone()
+    {
+        isHatchingDone = true;
+        TryToBaby();
+    }
+    private void TryToBaby()
+    {
+        if(isServerReady && isHatchingDone)
+        {
+            ToBaby();
+        }
+    }
+
     public void OhHatched()
     {
         currentState = GameState.Hatching;
