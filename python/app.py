@@ -57,6 +57,18 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Headers", "Content-Type, Content-Length")
         self.end_headers()
 
+    def do_GET(self):
+        if self.path == "/haelth":
+            body =b'{"status":"ok"}'
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_header()
+            self.wfile.write(body)
+        else:
+            self.send_response(404)
+            self.end_headers()
+
     def do_POST(self):
         if self.path != "/predict":
             self._send_json(404, {"error": "Not found"})
